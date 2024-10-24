@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  font-family: "Figtree", sans-serif;
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%);
+}
+.blog-card {
+  background-color: hsl(0, 0%, 100%);
+  margin: 200px auto;
+  width: 350px;
+  height: 480px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 19px;
+  border-radius: 20px;
+  border: 1px solid;
+  box-shadow: 7px 7px;
+}
+
+.card-img {
+  display: block;
+  border-radius: 15px;
+}
+
+.heading {
+  width: 80px;
+  font-size: 14px;
+  background-color: hsl(47, 88%, 63%);
+  padding: 6px 12px;
+  margin-top: 12px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+
+.published {
+  font-size: 13px;
+  font-weight: 500;
+  color: hsl(0, 0%, 7%);
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 4px 0;
+}
+
+.card-text:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.info {
+  font-size: 15px;
+  color: hsl(0, 0%, 42%);
+  margin-bottom: 12px;
+}
+
+.created-by {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-img {
+  width: 30px;
+  height: auto;
+}
+
+.author-name {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .blog-card {
+    width: 300px;
+    height: 430px;
+  }
+
+  .heading {
+    width: 70px;
+    font-size: 12px;
+  }
+
+  .card-img {
+    width: 260px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .published {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 18.5px;
+  }
+
+  .info {
+    font-size: 13px;
+  }
+}
